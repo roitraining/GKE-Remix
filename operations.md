@@ -8,7 +8,7 @@ We're basically extending the standard lab with:
 
 ### Task 0 - Starting the lab
 
-1. Start the **Configuring GKE-Native Monitoring and Logging lab in Qwiklabs**
+1. Start the **Configuring GKE-Native Monitoring and Logging** lab in Qwiklabs
 2. Perform the remaining steps in the **Lab Setup** section of the lab
 
 ### Task 1 - Using GKE

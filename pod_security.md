@@ -1,4 +1,4 @@
-## Configuring GKE-Native Monitoring and Logging (remix)
+## Securing Google Kubernetes Engine with Cloud IAM and Pod Security Policies (remix)
 
 ### Overview
 
@@ -87,7 +87,7 @@ Pod Security Standards
 
 8. In the Console, go to Log Explorer, and enter the following query:
 
-    ```json
+    ```
     resource.type="k8s_cluster"
     protoPayload.response.reason="Forbidden"
     protoPayload.resourceName="core/v1/namespaces/restricted-ns/pods/nginx"

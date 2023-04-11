@@ -1,0 +1,32 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: hello-deployment
+  labels:
+    app: hello
+    version: "1.0"
+    track: prod
+spec:
+  replicas: 10
+  selector:
+    matchLabels:
+      app: hello
+      version: "1.0"
+      track: prod
+  strategy:
+    type: RollingUpdate
+    rollingUpdate:
+      maxUnavailable: 3
+      maxSurge: 3
+  template:
+    metadata:
+      labels:
+        app: hello
+        version: "1.0"
+        track: prod
+    spec:
+      containers:
+      - name: hello-app
+        image: us-docker.pkg.dev/google-samples/containers/gke/hello-app:1.0
+        ports:
+        - containerPort: 8080

@@ -1,0 +1,32 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: hello-deployment-canary
+  labels:
+    app: hello
+    version: "2.0"
+    track: canary
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: hello
+      version: "2.0"
+      track: canary
+  strategy:
+    type: RollingUpdate
+    rollingUpdate:
+      maxUnavailable: 3
+      maxSurge: 3
+  template:
+    metadata:
+      labels:
+        app: hello
+        version: "2.0"
+        track: prod
+    spec:
+      containers:
+      - name: hello-app
+        image: us-docker.pkg.dev/google-samples/containers/gke/hello-app:2.0
+        ports:
+        - containerPort: 8080

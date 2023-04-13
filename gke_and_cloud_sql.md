@@ -163,7 +163,7 @@ using private networks, you need to set this up.
 
     ```bash
     kubectl --namespace wp create secret generic sql-credentials \
-   --from-literal=username=sqluser\
+   --from-literal=username=sqluser \
    --from-literal=password=sqlpassword
    ```
 
@@ -178,23 +178,22 @@ using private networks, you need to set this up.
    ```
 
 2. Visit https://github.com/roitraining/GKE-Remix/blob/main/app.yaml and review the contents of the manifest
-3. 
-4. Copy the contents of the Github file and paste into your `wp.yaml` file
+3. Copy the contents of the Github file and paste into your `wp.yaml` file
    > Note that the manfiest specifies the KSA to use when running your app
 
-5. In the Console, click on **Overview** on the left hand side, and copy
+4. In the Console, click on **Overview** on the left hand side, and copy
    the **Private IP** address of your instance. 
 
-6. Back in the code editor, replace the `<cloud sql private ip>` with the
+5. Back in the code editor, replace the `<cloud sql private ip>` with the
    private IP address of your Cloud SQL instance. Save your work.
 
-7. In Cloud Shell, deploy WordPress:
+6. In Cloud Shell, deploy WordPress:
     
     ```bash
     kubectl apply --namespace wp -f wp.yaml
     ```
-    
-8. Use the following command to get the Public IP of the load balancer in
+
+7. Use the following command to get the Public IP of the load balancer in
    front of you wordpress deployment
 
    ```bash

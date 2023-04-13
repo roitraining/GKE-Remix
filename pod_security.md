@@ -44,24 +44,8 @@ Pod Security Standards
     > the security standard. The second command will result in refusal to
     > admit pods that violate standards
 
-4. Using the **Cloud Shell editor**, create a new file name `podsec.yaml`. Paste
-   the following into the file and save your work at the root of you home
-   directory:
-
-   ```yaml
-   apiVersion: v1
-    kind: Pod
-    metadata:
-    name: nginx
-    labels:
-        app: nginx
-    spec:
-    containers:
-    - name: nginx
-        image: nginx
-        securityContext:
-        privileged: true
-   ```
+4. Using the **Cloud Shell editor**, create a new file name `podsec.yaml`. Copy
+   the code from the [podspec.yaml](https://github.com/roitraining/GKE-Remix/blob/main/podspec.yaml) file and paste it into your local file.
 
 5. Apply the new configuration to the permissive namespace:
 

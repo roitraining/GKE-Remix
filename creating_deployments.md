@@ -61,7 +61,10 @@ along the way
 ### Task 4
 
 1. Do Task 4 as written in Qwiklabs instructions
-2. In the Console, visit **Kubernetes Engine > Workloads > nginx-deployment**.
+
+### Task 4b
+
+1. In the Console, visit **Kubernetes Engine > Workloads > nginx-deployment**.
    
    > Are the pods in this deployment exposed via any services now?
 

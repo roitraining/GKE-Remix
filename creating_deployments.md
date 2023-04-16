@@ -5,7 +5,7 @@
 We're basically doing the standard lab, but looking at some additional stuff
 along the way
 
-### Task 0
+### Setup
 
 1. Do **Lab Setup** as written in Qwiklabs instructions
 
@@ -89,3 +89,6 @@ along the way
 ### Task 5
 
 1. Do Task 5 as written in Qwiklabs instructions
+
+---
+Copyright 2023, ROI TRAINING, INC. Please see LICENSE for more details.

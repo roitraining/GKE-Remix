@@ -7,7 +7,7 @@ waiting for clusters to build!
 
 ### Setup
 
-1. Follow the directions in the Setup and requirements section of Qwiklabs,
+1. Follow the directions in the **Setup and requirements** section of Qwiklabs,
    **BUT** replace the command used to create the cluster in **Provision testing
    environment** section (step 2 of that section). Use this command instead:
 
@@ -21,9 +21,9 @@ waiting for clusters to build!
         --autoscaling-profile optimize-utilization
     ```
 
-    ```
     This command creates the cluster, enables VPA and cluster auto-scaling with
-    the more aggressive scale-down strategy in place.
+    the more aggressive scale-down strategy in place. It will take 5-7 minutes
+    to complete.
 
 ### Tasks 1-4
 
@@ -31,10 +31,13 @@ waiting for clusters to build!
 
 ### Task 5
 
-1. Skip Steps 1-2 in the Qwiklabs instructions; pick up at Step 3.
-2. Complete the rest of Task 5 as written
+1. Skip **Steps 1-2** in the Qwiklabs instructions; pick up at **Step 3**.
+2. Complete the rest of **Task 5** as written
 
 ### Tasks 6-8 
 
 1. Complete these tasks as written in Qwiklabs
 
+---
+
+Copyright 2023, ROI TRAINING, INC. Please see LICENSE for more details.

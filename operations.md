@@ -1,4 +1,4 @@
-## Configuring GKE-Native Monitoring and Logging (remix)
+## Configuring GKE-Native Monitoring and Logging (overlay)
 
 ### Overview
 
@@ -6,7 +6,7 @@ We're basically extending the standard lab with:
 * An additional logging section
 * A Google Cloud Managed Service for Prometheus section
 
-### Task 0 - Starting the lab
+### Setup
 
 1. Start the **Configuring GKE-Native Monitoring and Logging** lab in Qwiklabs
 2. Perform the remaining steps in the **Lab Setup** section of the lab
@@ -113,3 +113,6 @@ It will take 5-7 minutes to create your cluster.
 ### Optional Task 4 - Creating alerts with Kubernetes Engine Monitoring
 
 1. Do **Task 4** as written in Qwiklabs
+
+---
+Copyright 2023, ROI TRAINING, INC. Please see LICENSE for more details.

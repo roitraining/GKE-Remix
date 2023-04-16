@@ -1,11 +1,11 @@
-## Securing Google Kubernetes Engine with Cloud IAM and Pod Security Policies (remix)
+## Securing Google Kubernetes Engine with Cloud IAM and Pod Security Policies (overlay)
 
 ### Overview
 
 We're basically extending the standard lab but replacing PodSecurityPolicy with
 Pod Security Standards
 
-### Task 0 - Starting the lab
+### Setup
 
 1. Start the **Securing Google Kubernetes Engine with Cloud IAM and Pod 
    Security Policies** lab in Qwiklabs
@@ -83,3 +83,6 @@ Pod Security Standards
 ### Task 3. Rotate IP Address and Credentials
 
 1. Perform **Task 3** in the Qwiklabs instructions as written
+
+---
+Copyright 2023, ROI TRAINING, INC. Please see LICENSE for more details.

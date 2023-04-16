@@ -1,11 +1,11 @@
-## Using Cloud SQL with Google Kubernetes Engine (remix)
+## Using Cloud SQL with Google Kubernetes Engine (overlay)
 
 ### Overview
 
 We're basically tweaking the standard lab to use a private Cloud SQL instance
 and Workload Identity
 
-### Task 0 - Starting the lab
+### Setup
 
 1. Start the **Using Cloud SQL with Google Kubernetes Engine** lab in Qwiklabs
 2. Perform the remaining steps in the **Lab Setup** section of the lab
@@ -207,3 +207,6 @@ using private networks, you need to set this up.
 
 1. Do Task 7, Steps 1-6. You should have a functional Wordpress deployment
 2. Try creating several posts, and searching for posts.
+
+---
+Copyright 2023, ROI TRAINING, INC. Please see LICENSE for more details.

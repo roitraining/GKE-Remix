@@ -1,3 +1,6 @@
+# alias kubectl
+alias k="kubectl"
+
 # show deployment
 k apply -f n1.yaml
 k get pods

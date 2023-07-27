@@ -26,14 +26,14 @@ Pod Security Standards
     gcloud container clusters get-credentials $my_cluster --zone $my_zone
     ```
 
-2. Create two namespaces, one for permissive workloads and one for restrcited:
+2. Create two namespaces, one for permissive workloads and one for restricted:
 
     ```bash
     kubectl create ns baseline-ns
     kubectl create ns restricted-ns
     ```
 
-3. Label each of the namespaces to configure how the PodSecurity Adminssion
+3. Label each of the namespaces to configure how the PodSecurity Admission
    Controller handles pod security:
 
     ```bash
@@ -45,7 +45,7 @@ Pod Security Standards
     > admit pods that violate standards
 
 4. Using the **Cloud Shell editor**, create a new file name `podsec.yaml`. Copy
-   the code from the [podspec.yaml](https://github.com/roitraining/GKE-Remix/blob/main/podspec.yaml) file and paste it into your local file.
+   the code from the [podsec.yaml](https://github.com/roitraining/GKE-Remix/blob/main/podsec.yaml) file and paste it into your local file.
 
 5. Apply the new configuration to the permissive namespace:
 
@@ -58,7 +58,7 @@ Pod Security Standards
 6. Verify that the pod did, in fact, get deployed:
 
     ```bash
-    kubectl get pods -ns baseline-ns
+    kubectl get pods --namespace baseline-ns
     ```
 
 7. Apply the manifest to the restrive namespace:
@@ -69,7 +69,7 @@ Pod Security Standards
 
     You should see an error indicating the pod won't be created.
 
-8. In the Console, go to Log Explorer, and enter the following query:
+8. In the Console, go to Logs Explorer, and enter the following query:
 
     ```
     resource.type="k8s_cluster"
